@@ -2,7 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://somadjago.github.io/Leroy-perez/</loc>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://somadjago.github.io/Leroy-perez/#accueil</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://somadjago.github.io/Leroy-perez/#services</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://somadjago.github.io/Leroy-perez/#apropos</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://somadjago.github.io/Leroy-perez/#contact</loc>
+    <priority>0.7</priority>
   </url>
 </urlset>
