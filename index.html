@@ -1,199 +1,219 @@
 <!DOCTYPE html>
-<html lang="fr">  
-<head>  
-  <meta charset="UTF-8" />  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
-  <title>Leroy Perez Technologies - Solutions Web & Digital au Togo</title>  
-  <meta name="description" content="Leroy Perez Technologies, entreprise innovante à Lomé, Togo. Spécialiste en création de sites web, solutions e-commerce et services digitaux.">  
-  <meta name="keywords" content="Leroy Perez, technologies, Lomé, Togo, création site web, e-commerce, solutions digitales, 1XBET, PayPal">  
-  <meta name="author" content="Leroy Perez Technologies">  
-  <meta name="robots" content="index, follow">  
-
-  <!-- Vérification Google -->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leroy Perez-Tech | Agence Digitale Moderne à Lomé</title>
+  <meta name="description" content="Leroy Perez-Tech est une agence numérique à Lomé, spécialisée dans la création de sites web, réseaux sociaux, comptes monétisés et services digitaux en Afrique.">
+  <meta name="keywords" content="Leroy Perez, agence web Lomé, création site web Togo, SEO, monétisation TikTok, PayPal Afrique, 1xbet, melbet, 1win, betwinner">
+  <meta name="author" content="Leroy Perez-Tech">
+  <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="r9SVm3cmzNDntyeQQ_jZRSjV8j51QpLoXSKFidntRAA" />
+  <link rel="canonical" href="https://leroyperez.neocities.org/" />
+  <link rel="sitemap" type="application/xml" href="https://leroyperez.neocities.org/sitemap.xml" />
+  <meta property="og:title" content="Leroy Perez-Tech | Experts en Digital à Lomé">
+  <meta property="og:description" content="Création de sites, services numériques et monétisation en Afrique.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leroyperez.neocities.org/">
+  <meta property="og:image" content="https://leroyperez.neocities.org/logo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Leroy Perez-Tech | Solutions Web à Lomé">
+  <meta name="twitter:description" content="Services numériques, SEO, réseaux sociaux et PayPal Afrique.">
+  <meta name="twitter:image" content="https://leroyperez.neocities.org/logo.jpg">
 
-  <meta property="og:title" content="Leroy Perez Technologies - Solutions Web & Digital au Togo">  
-  <meta property="og:description" content="Votre partenaire technologique de confiance à Lomé. Experts en création de sites web et solutions digitales.">  
-  <meta property="og:type" content="website">  
-  <meta property="og:image" content="https://leroy-perez.vercel.app/img/logo.jpg">  
-  <meta property="og:url" content="https://leroy-perez.vercel.app/">  
-  <meta name="twitter:card" content="summary_large_image">  
-  <meta name="twitter:image" content="https://leroy-perez.vercel.app/img/logo.jpg">  
-  <meta name="twitter:title" content="Leroy Perez Technologies">  
-  <meta name="twitter:description" content="Votre partenaire technologique de confiance à Lomé. Experts en création de sites web et solutions digitales.">  
-  <style>  
-    :root {  
-      --primary: #6c63ff;  
-      --secondary: #5e60ce;  
-      --accent: #c77dff;  
-      --bg: #f4f4f9;  
-      --text-dark: #0f172a;  
-      --text-light: #ffffff;  
-    }  
-    body {  
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-      margin: 0;  
-      padding: 0;  
-      background-color: var(--bg);  
-      color: var(--text-dark);  
-      overflow-x: hidden;  
-    }  
-    header, footer {  
-      background: var(--primary);  
-      color: var(--text-light);  
-      text-align: center;  
-      padding: 20px;  
-    }  
-    nav {  
-      background-color: var(--secondary);  
-      color: white;  
-      display: flex;  
-      justify-content: center;  
-      gap: 20px;  
-      padding: 12px 0;  
-      flex-wrap: wrap;  
-    }  
-    nav a {  
-      color: white;  
-      text-decoration: none;  
-      font-weight: 600;  
-      padding: 8px 16px;  
-      border-radius: 5px;  
-      transition: all 0.3s;  
-    }  
-    nav a:hover {  
-      background-color: var(--accent);  
-      color: var(--text-dark);  
-      box-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);  
-    }  
-    .hero {  
-      padding: 80px 20px;  
-      text-align: center;  
-      background: linear-gradient(120deg, var(--primary), var(--secondary));  
-      color: white;  
-      opacity: 0;  
-      transform: translateY(50px);  
-      animation: fadeInUp 1s forwards;  
-      animation-delay: 0.3s;  
-    }  
-    .section {  
-      padding: 50px 20px;  
-      max-width: 1000px;  
-      margin: auto;  
-      opacity: 0;  
-      transform: translateY(50px);  
-      animation: fadeInUp 1s forwards;  
-    }  
-    .services li {  
-      background: white;  
-      margin: 12px 0;  
-      padding: 18px;  
-      border-left: 5px solid var(--primary);  
-      border-radius: 5px;  
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
-    }  
-    .example-link {  
-      display: block;  
-      margin-top: 5px;  
-      font-size: 0.9em;  
-      color: var(--primary);  
-      text-decoration: underline;  
-    }  
-    .contact-button {  
-      text-align: center;  
-      margin-top: 20px;  
-    }  
-    .contact-button a {  
-      display: inline-block;  
-      padding: 14px 30px;  
-      background-color: var(--secondary);  
-      color: white;  
-      text-decoration: none;  
-      border-radius: 6px;  
-      font-size: 1rem;  
-      margin: 5px;  
-      position: relative;  
-      transition: all 0.4s ease;  
-    }  
-    .contact-button a:hover {  
-      background-color: var(--accent);  
-      color: var(--text-dark);  
-      box-shadow: 0 0 15px var(--accent), 0 0 30px var(--accent);  
-    }  
-    footer small {  
-      display: block;  
-      margin-top: 10px;  
-    }  
-    @keyframes fadeInUp {  
-      to {  
-        opacity: 1;  
-        transform: translateY(0);  
-      }  
-    }  
-  </style>  
-</head>  
-<body>  
-  <header>  
-    <h1>Leroy Perez Technologies</h1>  
-    <p>Entreprise innovante basée à Lomé, Togo</p>  
-  </header>  
+  <!-- Balise pour le logo SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Leroy Perez-Tech",
+    "url": "https://leroyperez.neocities.org/",
+    "logo": "https://leroyperez.neocities.org/logo.jpg"
+  }
+  </script>
 
-  <nav>  
-    <a href="#accueil">Accueil</a>  
-    <a href="#services">Services</a>  
-    <a href="#apropos">À propos</a>  
-    <a href="#contact">Contact</a>  
-  </nav>  
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f6f9fc; color: #1e293b; }
+    header, footer { background: linear-gradient(90deg, #6c63ff, #5e60ce); color: white; padding: 40px 20px; position: relative; }
+    header h1, header p { margin: 0; text-align: center; }
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .logo img {
+      width: 60px;
+      height: auto;
+      border-radius: 6px;
+    }
+    nav { background: #4f46e5; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; padding: 10px; }
+    nav a { color: white; text-decoration: none; padding: 10px 15px; border-radius: 6px; transition: 0.3s; }
+    nav a:hover { background: #a78bfa; color: #000; }
+    .section { max-width: 1100px; margin: auto; padding: 50px 20px; }
+    .section h2 { text-align: center; color: #4338ca; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+    .card { background: white; border-left: 5px solid #6366f1; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    .card h3 { margin-top: 0; color: #4f46e5; }
+    .contact-button { text-align: center; margin-top: 40px; }
+    .contact-button a { background: #4f46e5; color: white; padding: 14px 30px; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s; }
+    .contact-button a:hover { background: #a78bfa; color: #000; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://leroyperez.neocities.org/logo.jpg" alt="Logo Leroy Perez-Tech" />
+    </div>
+    <h1>Leroy Perez-Tech</h1>
+    <p>Votre partenaire digital moderne à Lomé et en Afrique</p>
+  </header>
 
-  <section id="accueil" class="hero">  
-    <h1>Bienvenue chez Leroy Perez Technologies</h1>  
-    <p>Nous donnons vie à vos projets numériques avec créativité et expertise.</p>  
-    <p>Partenaire et agent officiel de 1XBET</p>  
-  </section>  
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section id="services" class="section services">  
-    <h2>Nos Services</h2>  
-    <ul>  
-      <li>Création de sites Web personnalisés <a href="https://somadjago.github.io/Leroy-perez/" class="example-link">(Exemple)</a></li>  
-      <li>Développement de blogs dynamiques <a href="https://leroy-perez.blogspot.com/" target="_blank" class="example-link">(Exemple)</a></li>  
-      <li>Sites vitrines professionnels <a href="https://somadjago.github.io/Leroy-perez/" class="example-link">(Exemple)</a></li>  
-      <li>Solutions e-commerce <a href="#" class="example-link">(À venir)</a></li>  
-      <li>Comptes PayPal valides</li>  
-      <li>Comptes TikTok / YouTube monétisés</li>  
-      <li>Accompagnement pour la monétisation</li>  
-      <li>Agent officiel 1XBET <a href="https://cutt.ly/WrfzdIGD" class="example-link">(Lien)</a></li>  
-      <li>Agent officiel Melbet <a href="https://cutt.ly/Yrfzf46w" class="example-link">(Lien)</a></li>  
-      <li>Agent officiel Betwinner <a href="#" class="example-link">(À venir)</a></li>  
-      <li>Agent officiel 1win <a href="https://cutt.ly/RrdvJPSn" class="example-link">(Lien)</a></li>  
-    </ul>  
-    <p style="margin-top:20px;font-weight:bold;text-align:center;">Votre vision, notre mission. Ensemble, construisons votre avenir numérique.</p>  
-  </section>  
+  <section id="services" class="section">
+    <h2>Nos Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3> Création de sites web <div style="text-align: center; margin-top: 40px;">
+            <a href="siteweb.html" style="
+              display: inline-block;
+              background: #4f46e5;
+              color: white;
+              padding: 14px 30px;
+              text-decoration: none;
+              font-weight: bold;
+              border-radius: 8px;
+              transition: 0.3s;
+            ">Voir les détails du service web</a>
+          </div></h3>
+        <p>Sites vitrines, blogs, plateformes e-commerce avec design responsive et SEO.</p>
+      </div>
+      <div class="card">
+        <h3>Réseaux Sociaux
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="rsocio.html" style="
+                  display: inline-block;
+                  background: #4f46e5;
+                  color: white;
+                  padding: 14px 30px;
+                  text-decoration: none;
+                  font-weight: bold;
+                  border-radius: 8px;
+                  transition: 0.3s;
+                ">Voir les détails du service des reseaux sociaux </a>
+              </div>
+        </h3>
+        <p>Gestion de vos présences Facebook, Instagram, TikTok, YouTube.</p>
+      </div>
+      <div class="card">
+        <h3>Comptes Monétisés
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="monetique.html" style="
+                  display: inline-block;
+                  background: #4f46e5;
+                  color: white;
+                  padding: 14px 30px;
+                  text-decoration: none;
+                  font-weight: bold;
+                  border-radius: 8px;
+                  transition: 0.3s;
+                ">Voir les détails de la monetisation</a>
+              </div>
+        </h3>
+        <p>Création de comptes YouTube & TikTok prêts pour la monétisation.</p>
+      </div>
+      <div class="card">
+        <h3>Comptes PayPal Afrique
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="index2.html" style="
+                  display: inline-block;
+                  background: #4f46e5;
+                  color: white;
+                  padding: 14px 30px;
+                  text-decoration: none;
+                  font-weight: bold;
+                  border-radius: 8px;
+                  transition: 0.3s;
+                ">Voir les détails du service de payupal </a>
+              </div>
+        </h3>
+        <p>Création de comptes PayPal fonctionnels pour les pays non supportés.</p>
+      </div>
+      <div class="card">
+        <h3>Partenariats Officiels
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="partenariat.html" style="
+                  display: inline-block;
+                  background: #4f46e5;
+                  color: white;
+                  padding: 14px 30px;
+                  text-decoration: none;
+                  font-weight: bold;
+                  border-radius: 8px;
+                  transition: 0.3s;
+                ">Voir les détails du Partenariat</a>
+              </div>
+        </h3>
+        <p>1XBET, Melbet, Betwinner, 1Win, Parispesa .</p>
+      </div>
+      <div class="card">
+        <h3>Plateforme Immobilière
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="immobilier.html" style="
+                  display: inline-block;
+                  background: #4f46e5;
+                  color: white;
+                  padding: 14px 30px;
+                  text-decoration: none;
+                  font-weight: bold;
+                  border-radius: 8px;
+                  transition: 0.3s;
+                ">Voir les détails du service Web</a>
+              </div>
+        </h3>
+        <p>Projet en cours de développement pour un site immobilier international.</p>
+      </div>
+    </div>
+  </section>
 
-  <section id="apropos" class="section">  
-    <h2>À propos de nous</h2>  
-    <p>Leroy Perez Technologies est une entreprise technologique de référence à Lomé, Togo. Spécialisée dans les solutions digitales modernes, notre équipe vous accompagne de la conception à la réalisation de vos projets web.</p>  
-    <p>Nous croyons en l'innovation, la transparence et la satisfaction client. Faites le choix de l'excellence.</p>  
-    <p><strong>Téléphone :</strong> +228 97 84 71 12 / +228 90 92 25 12</p>  
-    <p><strong>Email :</strong> leroyperez67@gmail.com</p>  
-  </section>  
+  <section id="apropos" class="section">
+    <h2>À propos</h2>
+    <p>Leroy Perez-Tech est une entreprise numérique créative fondée à Lomé. Nous transformons les idées en projets digitaux concrets grâce à une approche personnalisée, fiable et innovante.</p>
+  </section>
 
-  <section id="contact" class="section">  
-    <h2>Contactez-nous</h2>  
-    <p>Prêt à transformer vos idées en réalité ? Discutons ensemble de votre projet !</p>  
-    <div class="contact-button">  
-      <a href="https://form.jotform.com/250995676553574" target="_blank">Remplir le formulaire de contact</a>  
-    </div>  
-  </section>  
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p><strong>Téléphone :</strong> +228 97 84 71 12 / +228 90 92 25 12</p>
+    <p><strong>WhatsApp :</strong> +228 97645715</p>
+    <div class="contact-button">
+      <a href="https://form.jotform.com/250995676553574" target="_blank">Formulaire de contact</a>
+    </div>
+  </section>
 
-  <footer>  
-    <p>&copy; 2025 Leroy Perez Technologies. Tous droits réservés.</p>  
-  </footer>  
+  <footer>
+    <p>&copy; 2025 Leroy Perez-Tech | Tous droits réservés</p>
+  </footer>
 
-  <script>  
-    const sections = document.querySelectorAll('.section');  
-    sections.forEach((section, index) => {  
-      section.style.animationDelay = `${index * 0.5 + 1}s`;  
-    });  
-  </script>  
-</body>  
-  </html>
+  <script>
+    // Animation fade simple
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card, .section').forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = "translateY(30px)";
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
